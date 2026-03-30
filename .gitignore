@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+logs/
+**/data/
+**/faiss_db_m3e/
+
+# IDE
+.idea/
+**/.deepeval/
+.deepeval/
+.pytest_cash
+.vscode/
+*.swp
+*.swo
+*~
+
+# Reports
+reports/test_results/
+eval_results/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.egg-info/
