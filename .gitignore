@@ -11,7 +11,7 @@ logs/
 .idea/
 **/.deepeval/
 .deepeval/
-.pytest_cash
+.pytest_cache/
 .vscode/
 *.swp
 *.swo
