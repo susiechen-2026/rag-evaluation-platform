@@ -1,4 +1,4 @@
-# RAG评测平台
+# RAG系统评测平台
 
 RAG（Retrieval-Augmented Generation）评测平台是一个用于评估和优化RAG系统性能的工具。它可以帮助你评测RAG系统在多个维度上的表现，并提供详细的优化建议。
 
