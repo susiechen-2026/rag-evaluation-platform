@@ -1,0 +1,282 @@
+[
+  {
+    "input": "大语言模型LLM是什么，有什么特点？",
+    "expected_output": "大语言模型（Large Language Model，简称LLM）是一种基于深度学习的人工智能技术，使用大量文本数据进行训练，使其能够生成自然语言文本或理解语言文本的含义。这些模型通过在庞大的数据集上进行训练，学习自然语言的模式和结构，从而在一定程度上模拟人类的语言认知和生成过程。",
+    "actual_output": "根据您提供的上下文，**没有关于“大语言模型（LLM）是什么”或其特点的任何定义、解释或描述**。该上下文仅聚焦于三种归一化技术（Layer Norm、RMS Norm、Deep Norm）的计算公式、设计思路与实现特点，属于模型训练中的**优化技巧（Normalization）**范畴，但并未提及“大语言模型（LLM）”这一概念本身。\n\n✅ 上下文明确涉及的内容包括：  \n- Layer Norm 的公式（虽未写出具体形式，但指出是“方法篇”第一问）；  \n- RMS Norm 是 Layer Norm 的简化版本，去除了均值平移项，更快且效果相当甚至略优；  \n- Deep Norm 通过缩放残差连接（α > 1）和初始化参数缩放（β < 1）来稳定深层模型训练。\n\n❌ 但上下文**完全未定义 LLM**，也未说明其：  \n• 基本定义（如：基于海量文本预训练的超大规模Transformer语言模型）；  \n• 核心特点（如：涌现能力、上下文学习、指令遵循、多任务泛化等）；  \n• 规模指标（参数量、训练数据量）、典型架构（Decoder-only）、训练范式（预训练+微调/RLHF）等。\n\n📌 总结：  \n您提供的《AiGC 面试宝典》片段是一份**面向模型训练细节的技术笔记**，重点在归一化方法，而非LLM通识介绍。因此，**无法基于该上下文回答“LLM是什么、有什么特点”**。如需了解LLM，建议参考基础概念资料或补充相关上下文。\n\n需要我帮您简要科普LLM的定义与核心特点吗？😊",
+    "metric_scores": {
+      "Contextual Relevancy": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no relevant statements in the retrieval context addressing the difference between RAG and fine-tuning, and the reasons for irrelevancy list is empty—indicating a complete absence of supporting or related content.",
+        "success": false
+      },
+      "Contextual Precision": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because no retrieval contexts were provided, meaning there are zero relevant nodes ranked above any irrelevant ones — the metric cannot be satisfied without at least one relevant node present in the ranked list.",
+        "success": false
+      },
+      "Contextual Recall": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the retrieval context is empty (0 nodes), so none of the sentences in the expected output—including sentence 1 (introduction), sentence 2 (micro-fine-tuning definition), sentence 3 (micro-fine-tuning trade-offs), sentence 4 (RAG definition), and sentence 5 (RAG trade-offs)—can be attributed to any node in retrieval context.",
+        "success": false
+      },
+      "Answer Relevancy": {
+        "score": 0.2,
+        "reason": "The score is 0.20 because the actual output contains almost no substantive explanation of the differences between RAG and fine-tuning; instead, it repeatedly states what the context does *not* contain (e.g., no definitions, no comparisons, no coverage of training methods), lists unrelated CV/NLP benchmarks and metrics (ImageNet, COCO, IoU, GLUE, etc.), and makes meta-level observations — all of which fail to address the input question directly. The minimal relevance likely stems from a few passing mentions acknowledging RAG and fine-tuning as distinct concepts, but without any concrete, contrasting description of their mechanisms, use cases, or architectures.",
+        "success": false
+      },
+      "Faithfulness": {
+        "score": 1.0,
+        "reason": "The score is 1.00 because the actual output fully aligns with the retrieval context—no contradictions were found, and all claims are well-supported.",
+        "success": true
+      },
+      "Hallucination": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no factual contradictions or unsupported claims; all statements in the actual output are fully aligned with the provided contexts and visible multimodal evidence, with no hallucinated content.",
+        "success": true
+      },
+      "Toxicity": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the output contains no toxic elements—it is respectful, neutral, and constructive throughout.",
+        "success": true
+      },
+      "Bias": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the actual output exhibits no detectable bias—its language is neutral, balanced, and free from stereotyping, favoritism, or exclusionary framing.",
+        "success": true
+      },
+      "latency": {
+        "score": 0,
+        "reason": "响应时间: 12899.53ms",
+        "success": false
+      },
+      "token_efficiency": {
+        "score": 0.975,
+        "reason": "Token效率: 0.975",
+        "success": true
+      },
+      "cost": {
+        "score": 0.99921,
+        "reason": "成本: $0.0001",
+        "success": true
+      }
+    },
+    "performance": {
+      "latency": 12899.531602859497,
+      "input_tokens": 1,
+      "output_tokens": 39,
+      "total_tokens": 40,
+      "token_efficiency": 0.975,
+      "cost": 7.9e-05
+    }
+  },
+  {
+    "input": "什么是RAG即检索增强生成？",
+    "expected_output": "检索增强生成(RAG)是一种...",
+    "actual_output": "上下文中**没有提及或定义“RAG（检索增强生成）”**这一概念。\n\n所提供的材料聚焦于**计算机视觉（CV）和自然语言处理（NLP）领域的基准数据集与评估任务**，例如：\n- CV 方面：ImageNet（图像分类）、COCO（目标检测与图像分割）、IOU 评估指标；\n- NLP 方面：GLUE、SuperGLUE、SQuAD（阅读理解与语言理解评测）。\n\n但全文**未出现“RAG”“检索增强生成”“retrieval-augmented generation”“知识检索”“外部知识库”“LLM+检索”等相关术语或解释**，也未涉及大语言模型（LLM）的推理架构、检索机制或生成增强技术等内容。\n\n因此，关于“RAG 是什么”，本上下文**无法提供任何直接信息或支持性描述**。如需了解 RAG，建议参考专门介绍大语言模型架构、知识增强方法或检索式生成系统的资料。",
+    "metric_scores": {
+      "Contextual Relevancy": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no relevant statements in the retrieval context addressing 'RAG (retrieval-augmented generation)', and the reasons for irrelevancy list is empty—indicating a complete absence of any contextual support for the input question.",
+        "success": false
+      },
+      "Contextual Precision": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no retrieval contexts provided at all, so no relevant nodes could be ranked — contextual precision requires at least one relevant node and one irrelevant node to compute a meaningful ranking-based score, but here the list is empty.",
+        "success": false
+      },
+      "Contextual Recall": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the retrieval context is empty (0 nodes), so no sentence in the expected output—including the first sentence '检索增强生成(RAG)是一种...'—can be attributed to any node in retrieval context.",
+        "success": false
+      },
+      "Answer Relevancy": {
+        "score": 0.05,
+        "reason": "The score is 0.05 because the actual output contains no relevant explanation of RAG—it consists entirely of irrelevant, negative statements about what is *not* present in the context (e.g., missing terms, unrelated datasets like ImageNet or COCO, and undefined acronyms), none of which address the definition, mechanism, or purpose of retrieval-augmented generation. While it correctly acknowledges the absence of information, it fails to provide any substantive, positive description of RAG—making it minimally relevant at best.",
+        "success": false
+      },
+      "Faithfulness": {
+        "score": 1.0,
+        "reason": "The score is 1.00 because the actual output fully aligns with the retrieval context—no contradictions were found.",
+        "success": true
+      },
+      "Hallucination": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no factual contradictions or unsupported claims; all statements in the actual output are fully aligned with the provided contexts and visible multimodal evidence, with no hallucinated content.",
+        "success": true
+      },
+      "Toxicity": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the output contains no toxic elements—it is respectful, neutral, and constructive throughout.",
+        "success": true
+      },
+      "Bias": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the actual output exhibits no detectable bias—its language is neutral, balanced, and free from stereotyping, favoritism, or exclusionary framing.",
+        "success": true
+      },
+      "latency": {
+        "score": 0.09312999248504639,
+        "reason": "响应时间: 9068.70ms",
+        "success": false
+      },
+      "token_efficiency": {
+        "score": 0.9333333333333333,
+        "reason": "Token效率: 0.933",
+        "success": true
+      },
+      "cost": {
+        "score": 0.99971,
+        "reason": "成本: $0.0000",
+        "success": true
+      }
+    },
+    "performance": {
+      "latency": 9068.700075149536,
+      "input_tokens": 1,
+      "output_tokens": 14,
+      "total_tokens": 15,
+      "token_efficiency": 0.9333333333333333,
+      "cost": 2.9e-05
+    }
+  },
+  {
+    "input": "RAG和微调有什么区别？",
+    "expected_output": "RAG（检索增强生成）和微调（Fine-tuning）是两种提升AI模型性能的技术，各有优缺点，适用于不同的应用场景。\n基本概念\n微调：在预训练模型的基础上，使用特定领域的数据进行进一步训练，使模型更好地适应特定任务。微调需要标注数据，训练成本较高，但推理速度快，适用于任务明确、数据量充足的场景。 \n2\nRAG：结合检索和生成的技术，通过检索外部知识库来增强生成模型的能力。RAG不需要标注数据，依赖外部知识库，推理速度较慢，但灵活性高，适用于知识密集型任务或动态数据场景。 ",
+    "actual_output": "上下文中**没有提及 RAG（Retrieval-Augmented Generation）或模型微调（Fine-tuning）的相关内容**。所有提供的文本均围绕**计算机视觉（CV）和自然语言处理（NLP）的基准数据集与评估任务**展开，例如：\n\n- CV 方面：ImageNet（图像分类）、COCO（目标检测/分割）、IOU 评估指标；\n- NLP 方面：GLUE、SuperGLUE、SQuAD（阅读理解与语言理解评估）；\n- 但全文**未定义、解释或比较 RAG 与微调的概念、原理、流程或应用场景**。\n\n因此，基于当前上下文，**无法回答 RAG 和微调的区别**。这两个术语属于大语言模型（LLM）应用与优化的技术范畴（如知识增强生成 vs. 参数更新训练），而上下文聚焦于**数据集用途和评估标准**，并未涉及模型训练方法、架构改进或推理范式等技术细节。\n\n如需了解 RAG 与微调的区别，建议补充关于 LLM 工程实践或模型适配方法的背景资料。",
+    "metric_scores": {
+      "Contextual Relevancy": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no relevant statements in the retrieval context addressing what a large language model (LLM) is or its characteristics, and the reasons for irrelevancy list is empty—indicating a complete absence of supporting or related content.",
+        "success": false
+      },
+      "Contextual Precision": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no retrieval contexts provided at all, so there are zero relevant nodes ranked above irrelevant ones — contextual precision cannot be computed without any retrieved nodes.",
+        "success": false
+      },
+      "Contextual Recall": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the retrieval context is empty—there are no nodes in retrieval context to support any sentence in the expected output, including sentence 1 and sentence 2.",
+        "success": false
+      },
+      "Answer Relevancy": {
+        "score": 0.23076923076923078,
+        "reason": "The score is 0.23 because the actual output consists almost entirely of irrelevant meta-statements—repeatedly noting the absence of LLM definitions, characteristics, or context in some external document, and digressing into technical details about normalization techniques (e.g., Layer Norm, RMS Norm, Deep Norm) that have no direct bearing on defining or describing LLMs. None of these statements address the input’s core request: a clear, self-contained explanation of what an LLM is and its key characteristics. The minimal relevance likely stems from a few passing mentions of 'LLM' as a term, but without substantive definition or description, the response fails to fulfill the query.",
+        "success": false
+      },
+      "Faithfulness": {
+        "score": 1.0,
+        "reason": "The score is 1.00 because the actual output fully aligns with the retrieval context—no contradictions were found, and all claims are well-supported.",
+        "success": true
+      },
+      "Hallucination": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no factual contradictions or unsupported claims; all statements in the actual output are fully aligned with the provided contexts and visible multimodal evidence, with no hallucinated content.",
+        "success": true
+      },
+      "Toxicity": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the output contains no toxic elements—it is respectful, neutral, and constructive throughout.",
+        "success": true
+      },
+      "Bias": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the actual output shows no signs of bias—its language is neutral, balanced, and factually grounded without favoring any perspective, group, or outcome.",
+        "success": true
+      },
+      "latency": {
+        "score": 0.06526074409484861,
+        "reason": "响应时间: 9347.39ms",
+        "success": false
+      },
+      "token_efficiency": {
+        "score": 0.96,
+        "reason": "Token效率: 0.960",
+        "success": true
+      },
+      "cost": {
+        "score": 0.99951,
+        "reason": "成本: $0.0000",
+        "success": true
+      }
+    },
+    "performance": {
+      "latency": 9347.392559051514,
+      "input_tokens": 1,
+      "output_tokens": 24,
+      "total_tokens": 25,
+      "token_efficiency": 0.96,
+      "cost": 4.9e-05
+    }
+  },
+  {
+    "input": "如何评估RAG系统的质量？",
+    "expected_output": "RAG系统的评估方法主要包括以下几个方面：\n准确性：通过准确率、召回率及F1值综合衡量。 \n1\n效率：以响应时间评估系统速度。 \n1\n可解释性：通过人工评分或语义分析，判断答案清晰度与用户理解难度。 \n1\n真实性：检测生成内容是否严格基于检索到的上下文，避免“无中生有”。 \n1\n评估方法：包括独立评估和端到端评估，使用命中率、MRR、NDCG等指标。这些方法和指标可以帮助开发者全面评估RAG系统的性能和有效性。",
+    "actual_output": "根据您提供的上下文，**没有提及RAG系统（Retrieval-Augmented Generation，检索增强生成）或其质量评估方法**。\n\n上下文详细介绍了计算机视觉（CV）和自然语言处理（NLP）领域的多个经典基准数据集（如 ImageNet、COCO、GLUE、SuperGLUE、SQuAD），并说明了它们各自的用途，例如：\n\n- COCO 用于目标检测与图像分割，评估依赖 **IOU 指标**（上下文第2点）；  \n- SQuAD 用于阅读理解任务，评估模型“从文章中找出问题答案”的能力（上下文“3. SQuAD”部分）；  \n- GLUE/SuperGLUE 是面向**自然语言理解（NLU）**的多任务评测基准，涵盖句子分类、推理、一致性判断等（上下文“2. 自然语言处理（NLP）基准测试”部分）。\n\n但**RAG系统属于生成式AI与信息检索的结合体，其质量评估通常涉及检索相关性（如Recall@k、MRR）、生成事实一致性（Faithfulness）、答案相关性（Answer Relevance）、幻觉率（Hallucination Rate）等维度**——这些内容**在所提供的上下文中均未出现**。\n\n✅ 总结：  \n> 上下文未涉及RAG系统的定义、组成或评估方法。它聚焦于传统CV基准（ImageNet/COCO）和NLU基准（GLUE/SQuAD），而RAG属于更前沿的**生成式问答/知识增强型系统**，其评估标准（如检索+生成联合指标）不在当前材料范围内。\n\n如需了解RAG评估的常见实践，我可以基于领域常识为您补充说明 😊",
+    "metric_scores": {
+      "Contextual Relevancy": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no relevant statements in the retrieval context addressing how to assess RAG system quality, and the reasons for irrelevancy list is empty—indicating a complete absence of supporting or related content.",
+        "success": false
+      },
+      "Contextual Precision": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no retrieval contexts provided at all, so no relevant nodes exist to be ranked higher than irrelevant ones—contextual precision cannot be computed without any retrieved nodes.",
+        "success": false
+      },
+      "Contextual Recall": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the retrieval context contains no nodes, so none of the six sentences in the expected output can be grounded in any supporting evidence from the context.",
+        "success": false
+      },
+      "Answer Relevancy": {
+        "score": 0.22580645161290322,
+        "reason": "The score is 0.23 because the output overwhelmingly consists of irrelevant content—listing generic benchmark datasets (e.g., ImageNet, COCO, GLUE) and meta-commentary about what is *not* mentioned (e.g., 'no mention of RAG', 'absence of Recall@k'), rather than addressing *how to assess RAG quality*. It fails to describe or explain any RAG-specific evaluation methods (e.g., faithfulness, answer relevance, retrieval-augmented QA metrics), making it minimally relevant; the low score reflects this near-total misalignment with the input’s explicit request for assessment methodology.",
+        "success": false
+      },
+      "Faithfulness": {
+        "score": 1.0,
+        "reason": "The score is 1.00 because the actual output fully aligns with the retrieval context—no contradictions were found.",
+        "success": true
+      },
+      "Hallucination": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because there are no factual contradictions or unsupported claims; all statements in the actual output are fully aligned with the provided contexts and visible multimodal evidence, with no hallucinated content.",
+        "success": true
+      },
+      "Toxicity": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the output contains no toxic elements—it is respectful, neutral, and constructive throughout.",
+        "success": true
+      },
+      "Bias": {
+        "score": 0.0,
+        "reason": "The score is 0.00 because the actual output exhibits no detectable bias—its language is neutral, balanced, and free from stereotyping, favoritism, or exclusionary framing.",
+        "success": true
+      },
+      "latency": {
+        "score": 0,
+        "reason": "响应时间: 12781.64ms",
+        "success": false
+      },
+      "token_efficiency": {
+        "score": 0.9629629629629629,
+        "reason": "Token效率: 0.963",
+        "success": true
+      },
+      "cost": {
+        "score": 0.99947,
+        "reason": "成本: $0.0001",
+        "success": true
+      }
+    },
+    "performance": {
+      "latency": 12781.641483306885,
+      "input_tokens": 1,
+      "output_tokens": 26,
+      "total_tokens": 27,
+      "token_efficiency": 0.9629629629629629,
+      "cost": 5.2999999999999994e-05
+    }
+  }
+]

@@ -1,0 +1,19 @@
+from rag.rag_observe import VectorStore
+
+try:
+    # 测试检索功能
+    vector_store = VectorStore()
+    print(f"加载的文档数量: {len(vector_store.documents) if hasattr(vector_store, 'documents') else 'N/A'}")
+
+    test_query = "大语言模型LLM是什么，有什么特点？"
+    results = vector_store.similarity_search(test_query, k=4)
+    print(f"检索结果数量: {len(results)}")
+    if results:
+        for i, result in enumerate(results):
+            print(f"结果 {i+1}: {result[:100]}...")
+    else:
+        print("没有检索到结果")
+except Exception as e:
+    print(f"发生错误: {e}")
+    import traceback
+    traceback.print_exc()

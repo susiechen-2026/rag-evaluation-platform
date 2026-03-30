@@ -1,0 +1,23 @@
+{
+  "api": {
+    "dashscope_api_key": "YOUR_API_KEY_HERE"
+  },
+  "model": {
+    "name": "deepseek-reasoner",
+    "base_url": "https://api.deepseek.com",
+    "temperature": 1.0
+  },
+  "evaluation": {
+    "threshold": 0.7,
+    "batch_size": 5,
+    "max_workers": 4
+  },
+  "output": {
+    "eval_results_dir": "./eval_results",
+    "visualizations_dir": "./visualizations"
+  },
+  "rag": {
+    "type": "local",
+    "local_function": "rag.rag_observe.rag_chatbot"
+  }
+}

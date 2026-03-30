@@ -1,0 +1,58 @@
+[
+      {
+        "question": "大语言模型LLM是什么，有什么特点？",
+        "actual_output": null,
+        "expected_output": "大语言模型（Large Language Model，简称LLM）是一种基于深度学习的人工智能技术，使用大量文本数据进行训练，使其能够生成自然语言文本或理解语言文本的含义。这些模型通过在庞大的数据集上进行训练，学习自然语言的模式和结构，从而在一定程度上模拟人类的语言认知和生成过程。",
+        "retrieval_context": "大语言模型（Large Language Model, LLM）是一类基于深度学习、使用海量文本数据训练的神经网络模型（通常基于Transformer架构），具备文本生成、理解、推理、多轮对话等能力；其主要特点包括规模大（参数量达数十亿至万亿级）、数据驱动、涌现能力、上下文学习（in-context learning）、零样本/少样本泛化能力等",
+        "context": "大语言模型（Large Language Model, LLM）是一类基于深度学习、使用海量文本数据训练的神经网络模型（通常基于Transformer架构），具备文本生成、理解、推理、多轮对话等能力；其主要特点包括规模大（参数量达数十亿至万亿级）、数据驱动、涌现能力、上下文学习（in-context learning）、零样本/少样本泛化能力等",
+        "answer": null,
+        "comments": null,
+        "source_file": null,
+        "tools_called": null,
+        "expected_tools": null,
+        "additional_metadata": null,
+        "custom_column_key_values": null
+    },
+    {
+        "question": "什么是RAG即检索增强生成？",
+        "actual_output": null,
+        "expected_output": "检索增强生成(RAG)是一种...",
+        "retrieval_context": null,
+        "context": null,
+        "answer": null,
+        "comments": null,
+        "source_file": null,
+        "tools_called": null,
+        "expected_tools": null,
+        "additional_metadata": null,
+        "custom_column_key_values": null
+    },
+    {
+        "question": "RAG和微调有什么区别？",
+        "actual_output": null,
+        "expected_output":"RAG（检索增强生成）和微调（Fine-tuning）是两种提升AI模型性能的技术，各有优缺点，适用于不同的应用场景。\n基本概念\n微调：在预训练模型的基础上，使用特定领域的数据进行进一步训练，使模型更好地适应特定任务。微调需要标注数据，训练成本较高，但推理速度快，适用于任务明确、数据量充足的场景。 \n2\nRAG：结合检索和生成的技术，通过检索外部知识库来增强生成模型的能力。RAG不需要标注数据，依赖外部知识库，推理速度较慢，但灵活性高，适用于知识密集型任务或动态数据场景。 ",
+        "retrieval_context": null,
+        "context": "RAG 是一种结合检索外部知识库与生成模型的方法，不修改模型参数，依赖实时检索+提示增强；\n- 微调是指在预训练模型基础上，使用特定领域数据更新模型权重，使模型适配下游任务；\n- 二者在可解释性、数据依赖、计算成本、知识更新灵活性、隐私与部署等方面存在关键差异。",
+        "answer": null,
+        "comments": null,
+        "source_file": null,
+        "tools_called": null,
+        "expected_tools": null,
+        "additional_metadata": null,
+        "custom_column_key_values": null
+    },
+    {
+        "question": "如何评估RAG系统的质量？",
+        "actual_output": null,
+        "expected_output": "RAG系统的评估方法主要包括以下几个方面：\n准确性：通过准确率、召回率及F1值综合衡量。 \n1\n效率：以响应时间评估系统速度。 \n1\n可解释性：通过人工评分或语义分析，判断答案清晰度与用户理解难度。 \n1\n真实性：检测生成内容是否严格基于检索到的上下文，避免“无中生有”。 \n1\n评估方法：包括独立评估和端到端评估，使用命中率、MRR、NDCG等指标。这些方法和指标可以帮助开发者全面评估RAG系统的性能和有效性。",
+        "retrieval_context": "RAG 是一种结合检索外部知识库与生成模型的方法，不修改模型参数，依赖实时检索+提示增强；",
+        "context": "RAG 是一种结合检索外部知识库与生成模型的方法，不修改模型参数，依赖实时检索+提示增强；",
+        "answer": null,
+        "comments": null,
+        "source_file": null,
+        "tools_called": null,
+        "expected_tools": null,
+        "additional_metadata": null,
+        "custom_column_key_values": null
+    }
+]

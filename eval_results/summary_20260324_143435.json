@@ -1,0 +1,30 @@
+{
+  "total_questions": 4,
+  "timestamp": "20260324_143435",
+  "metric_averages": {
+    "Contextual Relevancy": 0.0,
+    "Contextual Precision": 0.0,
+    "Contextual Recall": 0.0,
+    "Answer Relevancy": 0.177,
+    "Faithfulness": 1.0,
+    "Hallucination": 0.0,
+    "Toxicity": 0.0,
+    "Bias": 0.0,
+    "latency": 0.04,
+    "token_efficiency": 0.958,
+    "cost": 0.999
+  },
+  "pass_rate": {
+    "Contextual Relevancy": 0.0,
+    "Contextual Precision": 0.0,
+    "Contextual Recall": 0.0,
+    "Answer Relevancy": 0.0,
+    "Faithfulness": 1.0,
+    "Hallucination": 0.0,
+    "Toxicity": 0.0,
+    "Bias": 0.0,
+    "latency": 0.0,
+    "token_efficiency": 1.0,
+    "cost": 1.0
+  }
+}
